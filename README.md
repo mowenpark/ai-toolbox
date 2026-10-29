@@ -12,6 +12,16 @@ claude plugin marketplace add mowenpark/ai-toolbox
 
 The catalog name is `mowenpark-ai-toolbox`. It is independent of each plugin's slash-command namespace.
 
+## PRD Buster
+
+[PRD Buster](plugins/prd-buster/) researches and hardens PRDs, drafts approved tickets, and optionally estimates story points after publication.
+
+```sh
+claude plugin install prd-buster@mowenpark-ai-toolbox --scope user
+```
+
+Run `/reload-plugins` or restart Claude Code, then use `/prd-buster:start` in your target project. Jira destinations are selected by each user.
+
 ## Repository Layout
 
 | Directory | Purpose |
