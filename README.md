@@ -34,7 +34,7 @@ Only entries in the marketplace are installed by Claude Code. Standalone skills 
 
 ## Development
 
-Node.js 22+ runs the dependency-free structural checks:
+Node.js 22+ runs the structural checks; Ruby's standard YAML parser validates skill frontmatter. No npm or gem packages are required.
 
 ```sh
 node --test
