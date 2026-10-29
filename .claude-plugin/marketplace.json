@@ -4,5 +4,11 @@
   "owner": {
     "name": "mowenpark"
   },
-  "plugins": []
+  "plugins": [
+    {
+      "name": "prd-buster",
+      "source": "./plugins/prd-buster",
+      "description": "Research and harden PRDs, publish approved tickets, and optionally estimate story points."
+    }
+  ]
 }

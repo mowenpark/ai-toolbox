@@ -13,6 +13,9 @@ test('marketplace identifies the personal public catalog', () => {
   assert.equal(marketplace.owner.name, 'mowenpark');
   assert.ok(marketplace.description.trim());
   assert.ok(Array.isArray(marketplace.plugins));
+  const prdBuster = marketplace.plugins.find((plugin) => plugin.name === 'prd-buster');
+  assert.ok(prdBuster, 'PRD Buster must be registered in the marketplace');
+  assert.equal(prdBuster.source, './plugins/prd-buster');
   assert.equal(new Set(marketplace.plugins.map((plugin) => plugin.name)).size, marketplace.plugins.length);
   assert.ok(readFileSync(resolve(root, 'LICENSE'), 'utf8').startsWith('MIT License\n'));
 });

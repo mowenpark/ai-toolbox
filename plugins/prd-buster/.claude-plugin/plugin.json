@@ -1,0 +1,9 @@
+{
+  "name": "prd-buster",
+  "version": "0.2.1",
+  "description": "Research and harden PRDs, approve Epics and vertical-slice tickets, publish, and optionally estimate story points.",
+  "author": { "name": "mowenpark" },
+  "homepage": "https://github.com/mowenpark/ai-toolbox/tree/main/plugins/prd-buster",
+  "repository": "https://github.com/mowenpark/ai-toolbox",
+  "license": "MIT"
+}
